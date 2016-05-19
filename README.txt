@@ -3,7 +3,7 @@ Query 1
 The following create query creates a new table users with 9 fields. 
 The id field is its primary key while the role_id is a foreign key that points to the roles table. This table can only be created after roles table has been created so that it does not reference an undefined field.
 ------------------------------------------------------------------------------------
-CREATE TABLE cars(
+CREATE TABLE users(
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	first_name VARCHAR(30) NOT NULL,
 	last_name VARCHAR(30) NOT NULL,
