@@ -19,20 +19,25 @@ CREATE TABLE cars(
 ====================================================================================
 
 Query 2
+
+The following query selects all users who are students ie whose ids exist on students table
 ------------------------------------------------------------------------------------
 SELECT * from users where id in (select id from students);
 
 ====================================================================================
 
 Query 3
-------------------------------------------------------------------------------------
 
+The following query inserts a new role into the roles table. id is ignored since it is the primary key so it auto increments
+------------------------------------------------------------------------------------
+INSERT INTO roles (name) VALUES('admin');
 ====================================================================================
 
 Query 4
 
+The following deletes 'ALL' entries of the tests table.
 ------------------------------------------------------------------------------------
-
+DELETE FROM tests
 ====================================================================================
 
 Query 5
