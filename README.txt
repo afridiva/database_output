@@ -37,8 +37,11 @@ Query 4
 
 The following deletes 'ALL' entries of the tests table.
 ------------------------------------------------------------------------------------
-DELETE FROM tests
+DELETE FROM tests;
 ====================================================================================
 
 Query 5
+
+The following query selects all fields from the two tables users and trainers as long as a primary key id on users table is linked to the foreign key, user_id on trainers table. Inner join makes sure to return results of both tables. 
 ------------------------------------------------------------------------------------
+SELECT * FROM users u INNER JOIN trainers t ON u.id = t.user_id;
