@@ -37,7 +37,7 @@ Query 4
 
 The following deletes 'ALL' entries of the tests table.
 ------------------------------------------------------------------------------------
-DELETE FROM tests;
+DELETE * FROM tests;
 ====================================================================================
 
 Query 5
